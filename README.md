@@ -1,11 +1,11 @@
 # IAP tunnel
 
 [![Actions Status][actions-badge]][actions-link]
-[![Documentation Status][rtd-badge]][rtd-link]
+<!-- [![Documentation Status][rtd-badge]][rtd-link] -->
 
-[![PyPI version][pypi-version]][pypi-link]
-[![Conda-Forge][conda-badge]][conda-link]
-[![PyPI platforms][pypi-platforms]][pypi-link]
+<!-- [![PyPI version][pypi-version]][pypi-link] -->
+<!-- [![Conda-Forge][conda-badge]][conda-link] -->
+<!-- [![PyPI platforms][pypi-platforms]][pypi-link] -->
 
 [![GitHub Discussion][github-discussions-badge]][github-discussions-link]
 
@@ -48,7 +48,7 @@ that will further enhance your IAP tunnel management experience.
 
 ### Example
 
-```
+```python
 from iap_tunnel import IAPTunnel
 
 with IAPTunnel(
