@@ -99,7 +99,8 @@ class IAPTunnel:
             f"--zone={zone}",
             "--tunnel-through-iap",
             "--",
-            f"{local_port}:{endpoint}",
+            "-N",
+            f"-L {local_port}:{endpoint}",
             *args,
         ]
         self.cmd = cmd
