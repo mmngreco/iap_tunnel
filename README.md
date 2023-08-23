@@ -55,14 +55,24 @@ will further enhance your IAP tunnel management experience.
 One way to easily populate this information is by using the `gcloud` command
 that Google provides in the User Interface (UI).
 
+So, if you have the following command:
+```bash
+gcloud compute ssh server-name \
+    --project=google-cloud-project \
+    --zone=europe-west1-b \
+    --tunnel-through-iap \
+    -- -N -L 8887:127.0.0.1:8888
+```
+It becomes:
+
 ```python
 from iap_tunnel import IAPTunnel
 
 with IAPTunnel(
     server="server-name",
-    zone="google-cloud-zone",
+    zone="europe-west1-b",
     project="google-cloud-project",
-    local_port=8888,
+    local_port=8887,
     endpoint="127.0.0.1:8888",
 ) as tunnel:
     print(tunnel.is_running())  # True
