@@ -39,6 +39,8 @@ test = [
 dev = [
   "pytest >=6",
   "pytest-cov >=3",
+  "nox",
+  "pdbpp",
 ]
 docs = [
   "sphinx>=4.0",

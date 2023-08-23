@@ -1,6 +1,7 @@
 # IAP tunnel
 
 [![Actions Status][actions-badge]][actions-link]
+
 <!-- [![Documentation Status][rtd-badge]][rtd-link] -->
 
 <!-- [![PyPI version][pypi-version]][pypi-link] -->
@@ -33,10 +34,10 @@ method would be to run `gcloud compute ssh ...` in a shell, forward the ports
 you need, and execute the code. However, this process can be cumbersome and
 inefficient.
 
-What if there was a way to create the tunnel exactly where you need it and
-close it immediately after use? That's where IAP Tunnel Manager comes in. It
-provides a solution to easily create and manage IAP tunnels without the hassle
-of manually setting up and tearing down the tunnel each time.
+What if there was a way to create the tunnel exactly where you need it and close
+it immediately after use? That's where IAP Tunnel Manager comes in. It provides
+a solution to easily create and manage IAP tunnels without the hassle of
+manually setting up and tearing down the tunnel each time.
 
 ## Project Overview
 
@@ -46,11 +47,10 @@ automatically closes it once you're done. This not only simplifies the process
 but also enhances security by minimizing the time the tunnel is open. With IAP
 Tunnel Manager, you no longer have to manually manage your IAP tunnels. The
 project does it for you, saving you time and effort, and allowing you to focus
-on what truly matters - your code. Stay tuned for more updates and features
-that will further enhance your IAP tunnel management experience.
+on what truly matters - your code. Stay tuned for more updates and features that
+will further enhance your IAP tunnel management experience.
 
 ### Example
-
 
 One way to easily populate this information is by using the `gcloud` command
 that Google provides in the User Interface (UI).
@@ -65,8 +65,8 @@ with IAPTunnel(
     local_port=8888,
     endpoint="127.0.0.1:8888",
 ) as tunnel:
-    print(tunnel.is_running())   # True
+    print(tunnel.is_running())  # True
     # your code here
 
-print(tunnel.is_running())   # False
+print(tunnel.is_running())  # False
 ```
